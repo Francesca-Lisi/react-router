@@ -1,18 +1,15 @@
 import { NavLink } from "react-router-dom"
+import menuHeader from "../data/menuData"
 
 const MainMenu = () => {
   return (
     <nav>
       <ul>
-        <li>
-          <NavLink to='/'>Home</NavLink>
-        </li>
-        <li>
-          <NavLink to='/chi-siamo'>Chi siamo</NavLink>
-        </li>
-        <li>
-          <NavLink to='/articoli'>Articoli</NavLink>
-        </li>
+        {menuHeader.map(item =>
+          <li key={item.id}>
+            <NavLink to={item.url}>{item.text}</NavLink>
+          </li>
+        )}
       </ul>
     </nav>
   )
