@@ -5,7 +5,7 @@ const DefaultLayout = () => {
   return (
     <>
       <header>
-        <h1>Header</h1>
+        <h1 className="text-center my-4">Blog di Ricette</h1>
         <MainMenu />
       </header>
 
@@ -14,7 +14,7 @@ const DefaultLayout = () => {
       </main>
 
       <footer>
-        <h3>Footer</h3>
+        <h6 className="text-center my-4">Footer</h6>
       </footer>
     </>
   )

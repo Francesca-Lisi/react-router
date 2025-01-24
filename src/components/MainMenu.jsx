@@ -6,11 +6,13 @@ const MainMenu = () => {
     <nav>
       <ul>
         {menuHeader.map(item =>
-          <li key={item.id}>
+          <li key={item.id} >
             <NavLink to={item.url}>{item.text}</NavLink>
           </li>
         )}
       </ul>
+
+
     </nav>
   )
 }
